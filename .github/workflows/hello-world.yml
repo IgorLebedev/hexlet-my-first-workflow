@@ -1,1 +1,9 @@
+name: hello-world
 
+on: push
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: make say-hello
